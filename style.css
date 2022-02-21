@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(241,180,196);
+    background: linear-gradient(90deg, rgba(241,180,196,1) 0%, rgba(231,131,214,1) 43%, rgba(128,211,228,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: calc(100vh - 40px);
+    font-family: 'Poppins',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
+}
+
+/*INTRO*/
+.welcome {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    font-size:  2.5rem;
+    font-weight: 600;
+    text-transform: none;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.intro {
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+/*PROJECTS*/
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 80%;
+    height: 150px;
+    text-decoration: none;
+    font-weight: 300;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgb(241,180,196);
+    color: black;
+    background: linear-gradient(90deg, rgba(241,180,196,1) 0%, rgba(231,131,214,1) 43%, rgba(128,211,228,1) 100%);
+    transition: 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.025);
+}
+
+.project:visited {
+    color: black;
+}
+
+.technologies {
+    width: 100%;
+    align-self: flex-end;
+}
+
+.tech {
+    font-size: 16px;
+    line-height: 42px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid #ced1df;
+    border-radius: 8px;
+    background-color: #eeeff1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*CONTACT */
+.links {
+    width: 100%;
+    height: auto;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.contact {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.question {
+    font-weight: 800;
+}
+
+.linkedin {
+    color: black;
+    background: rgb(241,180,196);
+    background: linear-gradient(90deg, rgba(241,180,196,1) 0%, rgba(231,131,214,1) 43%, rgba(128,211,228,1) 100%);
+    border-radius: 40px;
+    padding: 0.4em 0.4em;
+    cursor: pointer;
+}
+
+.linkedin:visited {
+    color: black;
+}
+
+/*SMALL SCREEN*/
+
+@media screen and (max-width: 800px) {
+    .hello {
+        min-height: 100%;
+    }
+    .name {
+        font-size: 1.7rem;
+    }
+    .intro {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+    .project {
+        height: auto;
+    }
+    .tech {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .links {
+        font-size: 1.2rem;
+    }
+}
