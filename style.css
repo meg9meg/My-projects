@@ -134,6 +134,11 @@
     color: black;
 }
 
+.github {
+    font-size: 1.7rem;
+    padding: 0.2em 0.2em;
+}
+
 /*SMALL SCREEN*/
 
 @media screen and (max-width: 800px) {
